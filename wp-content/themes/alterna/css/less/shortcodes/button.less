@@ -1,0 +1,359 @@
+/* Button */
+.btn {
+    position:relative;
+    border-radius:4px;
+    text-shadow:none;
+    .box-shadow-none();
+    background-image:none;
+    outline:0 !important;
+    border:none;
+    margin:0 0 15px;
+    color:#ffffff !important;
+    i {
+        margin-right:5px;
+    }
+}
+.btn:hover {
+    background-image:none;
+    color:#ffffff !important;
+    text-shadow:none;
+    .transition(background 400ms);
+}
+.btn:focus {
+    color:#ffffff;
+}
+.btn.no-margin {
+    margin:0;
+}
+.btn.btn-lg {
+    i {
+        margin-right:10px;
+    }
+}
+.float-btn {
+    box-shadow:0 4px 0 #414141;
+    padding-left:26px;
+    padding-right:26px;
+}
+.btn-lg.float-btn {
+    padding-left:34px;
+    padding-right:34px;
+}
+.btn-sm.float-btn {
+    padding-left:20px;
+    padding-right:20px;
+}
+.btn-xs.float-btn {
+    padding-left:15px;
+    padding-right:15px;
+}
+.icon-btn {
+    overflow:hidden;
+    padding-left:50px;
+    padding-right:12px;
+    span {
+        position:absolute;
+        left:0;
+        top:0;
+        background:rgba(0,0,0,0.2);
+        padding:6px 12px;
+    }
+}
+.icon-btn:hover {
+    span {
+        background:rgba(0,0,0,0.3);
+    }
+}
+.icon-btn i,.icon-btn.btn-lg i {
+    margin:0;
+}
+.btn-lg.icon-btn {
+    padding-left:58px;
+    padding-right:16px;
+    span {
+        padding:10px 16px;
+    }
+}
+.btn-sm.icon-btn {
+    padding-left:46px;
+    padding-right:10px;
+    span {
+        padding:5px 10px;
+    }
+}
+.btn-xs.icon-btn {
+    padding-left:26px;
+    padding-right:5px;
+    span {
+        padding:1px 5px;
+    }
+}
+.float-btn:active {
+    margin:1px 0 14px;
+    box-shadow:0 3px 0 #414141;
+}
+.float-btn.no-margin {
+    margin-bottom:4px;
+}
+.float-btn.no-margin:active {
+    margin:1px 0 3px;
+}
+.float-btn.icon-btn:hover {
+    span {
+        background:rgba(0,0,0,0.2);
+    }
+}
+.btn-theme-t {
+    color:@theme_color;
+}
+.btn-theme {
+    background:@theme_color;
+}
+.btn-theme:hover {
+    background:darken(@theme_color,10%);
+}
+.float-btn.btn-theme {
+    box-shadow:0 4px 0 darken(@theme_color,15%);
+}
+.float-btn.btn-theme:active {
+    box-shadow:0 3px 0 darken(@theme_color,15%);
+}
+.darkcyan-t {
+	color: #008B8B;
+}
+.darkcyan {
+    background:#008B8B;
+}
+.darkcyan:hover {
+    background:darken(#008B8B, 10%);
+}
+.float-btn.darkcyan {
+    box-shadow:0 4px 0 darken(#008B8B, 15%);
+}
+.float-btn.darkcyan:active {
+    box-shadow:0 3px 0 darken(#008B8B, 15%);
+}
+
+.deepskyblue-t {
+    color:#00BFFF;
+}
+.deepskyblue {
+    background:#00BFFF;
+}
+.deepskyblue:hover {
+    background:darken(#00BFFF, 10%);
+}
+.float-btn.deepskyblue {
+    box-shadow:0 4px 0 darken(#00BFFF, 15%);
+}
+.float-btn.deepskyblue:active {
+    box-shadow:0 3px 0 darken(#00BFFF, 15%);
+}
+
+.royalblue-t {
+    color:#4169E1;
+}
+.royalblue {
+    background:#4169E1;
+}
+.royalblue:hover {
+    background:darken(#4169E1, 10%);
+}
+.float-btn.royalblue {
+    box-shadow:0 4px 0 darken(#4169E1, 15%);
+}
+.float-btn.royalblue:active {
+    box-shadow:0 3px 0 darken(#4169E1, 15%);
+}
+
+.blueviolet-t {
+    color:#8A2BE2;
+}
+.blueviolet {
+    background:#8A2BE2;
+}
+.blueviolet:hover {
+    background:darken(#8A2BE2, 10%);
+}
+.float-btn.blueviolet {
+    box-shadow:0 4px 0 darken(#8A2BE2, 15%);
+}
+.float-btn.blueviolet:active {
+    box-shadow:0 3px 0 darken(#8A2BE2, 15%);
+}
+
+.purple-t {
+    color:#800080;
+}
+.purple {
+    background:#800080;
+}
+.purple:hover {
+    background: darken(#800080, 10%);
+}
+.float-btn.purple {
+    box-shadow:0 4px 0 darken(#800080, 15%);
+}
+.float-btn.purple:active {
+    box-shadow:0 3px 0 darken(#800080, 15%);
+}
+
+.deeppink-t {
+    color:#FF1493;
+}
+.deeppink {
+    background:#FF1493;
+}
+.deeppink:hover {
+    background:darken(#FF1493, 10%);
+}
+.float-btn.deeppink {
+    box-shadow:0 4px 0 darken(#FF1493, 15%);
+}
+.float-btn.deeppink:active {
+    box-shadow:0 3px 0 darken(#FF1493, 15%);
+}
+
+.crimson-t {
+    color:#DC143C;
+}
+.crimson {
+    background:#DC143C;
+}
+.crimson:hover {
+    background:darken(#DC143C, 10%);
+}
+.float-btn.crimson {
+    box-shadow:0 4px 0 darken(#DC143C, 15%);
+}
+.float-btn.crimson:active {
+    box-shadow:0 3px 0 darken(#DC143C, 15%);
+}
+
+.green-t {
+    color:#008000;
+}
+.green {
+    background:#008000;
+}
+.green:hover {
+    background:darken(#008000, 10%);
+}
+.float-btn.green {
+    box-shadow:0 4px 0 darken(#008000, 15%);
+}
+.float-btn.green:active {
+    box-shadow:0 3px 0 darken(#008000, 15%);
+}
+
+.lawngreen-t {
+    color:#7CFC00;
+}
+.lawngreen {
+    background:#7CFC00;
+}
+.lawngreen:hover {
+    background:darken(#7CFC00, 10%);
+}
+.float-btn.lawngreen {
+    box-shadow:0 4px 0 darken(#7CFC00, 15%);
+}
+.float-btn.lawngreen:active {
+    box-shadow:0 3px 0 darken(#7CFC00, 15%);
+}
+
+.yellow-t {
+    color:#f7ee17;
+}
+.yellow {
+    background:#f7ee17;
+}
+.yellow:hover {
+    background:darken(#f7ee17, 10%);
+}
+.float-btn.yellow {
+    box-shadow:0 4px 0 darken(#f7ee17, 15%);
+}
+.float-btn.yellow:active {
+    box-shadow:0 3px 0 darken(#f7ee17, 15%);
+}
+
+.gold-t {
+    color:#FFD700;
+}
+.gold {
+    background:#FFD700;
+}
+.gold:hover {
+    background:darken(#FFD700, 10%);
+}
+.float-btn.gold {
+    box-shadow:0 4px 0 darken(#FFD700, 15%);
+}
+.float-btn.gold:active {
+    box-shadow:0 3px 0 darken(#FFD700, 15%);
+}
+
+.orange-t {
+    color:#FFA500;
+}
+.orange {
+    background:#FFA500;
+}
+.orange:hover {
+    background:darken(#FFA500, 10%);
+}
+.float-btn.orange {
+    box-shadow:0 4px 0 darken(#FFA500, 15%);
+}
+.float-btn.orange:active {
+    box-shadow:0 3px 0 darken(#FFA500, 15%);
+}
+
+.orangered-t {
+    color:#FF4500;
+}
+.orangered {
+    background:#FF4500;
+}
+.orangered:hover {
+    background:darken(#FF4500, 10%);
+}
+.float-btn.orangered {
+    box-shadow:0 4px 0 darken(#FF4500, 15%);
+}
+.float-btn.orangered:active {
+    box-shadow:0 3px 0 darken(#FF4500, 15%);
+}
+
+.chocolate-t {
+    color:#D2691E;
+}
+.chocolate {
+    background:#D2691E;
+}
+.chocolate:hover {
+    background:darken(#D2691E, 10%);
+}
+.float-btn.chocolate {
+    box-shadow:0 4px 0 darken(#D2691E, 15%);
+}
+.float-btn.chocolate:active {
+    box-shadow:0 3px 0 darken(#D2691E, 15%);
+}
+
+.red-t {
+    color:#ff0000;
+}
+.red {
+    background:#ff0000;
+}
+.red:hover {
+    background:darken(#ff0000, 10%);
+}
+.float-btn.red {
+    box-shadow:0 4px 0 darken(#ff0000, 15%);
+}
+.float-btn.red:active {
+    box-shadow:0 3px 0 darken(#ff0000, 15%);
+}

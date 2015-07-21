@@ -1,0 +1,95 @@
+/* Comments */
+#cancel-comment-reply-link {
+    float:left;
+    margin-bottom:15px;
+}
+#comment-input {
+    & > input {
+        width:90%;
+    }
+}
+#comment-form {
+    #comment-textarea {
+        #comment {
+            width:100%;
+            float:right;
+        }
+        #comment.logged-in {
+            width:100%;
+            float:left;
+        }
+    }
+}
+.comment-list,.comment-list ul {
+    list-style:none outside none;
+    margin:0px;
+}
+.comment-list {
+    ul.children {
+        margin-left:50px;
+    }
+    .popover-title {
+        font-size:18px;
+    }
+    li {
+        margin-left:0;
+    }
+    .comment-item {
+        margin-bottom:10px;
+        position:relative;
+        width:100%;
+        .comment-content {
+            background-color:#f9f9f9;
+            border:1px #f0f0f0 solid;
+            margin-left:50px;
+            min-height:30px;
+            padding:10px;
+            p {
+                margin-top:5px;
+            }
+        }
+    }
+    .comment-reply-link {
+        color:#ffffff;
+        padding:3px 6px;
+        background:@theme_color;
+        font-size:11px;
+        border-radius:4px;
+    }
+    .comment-reply-link:hover {
+        color:#ffffff;
+        background:#5b8f00;
+    }
+}
+.comment-wait-approved {
+    color:#F55D2D;
+}
+#comment-nav-above {
+    margin:10px 0;
+    float:left;
+    width:100%;
+    .next-post {
+        float:right;
+    }
+    .pre-post {
+        float:left;
+    }
+}
+#comment-alert-error,#comment-alert-error span {
+    display:none;
+}
+#comment-alert-error.show,#comment-alert-error .comment-alert-error-name.show,#comment-alert-error .comment-alert-error-email.show,#comment-alert-error .comment-alert-error-url.show,#comment-alert-error .comment-alert-error-message.show {
+    display:block;
+}
+
+@media (max-width: 767px) { 
+.placeholding-input {
+    .comment-placeholder {
+        left: 5px;
+        left: 5px;
+    }
+}
+.comment-list &>.children, .comment-list &>.children &>.children {
+    margin-left: 0px;
+}
+}
