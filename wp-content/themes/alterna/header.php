@@ -19,32 +19,7 @@
 <!--<![endif]-->
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<?php 
-		global $page, $paged, $post, $post_id, $deviceType, $alterna_show_mode, $current_tax;
 
-		// get the current page
-		$paged = 1;
-		if (get_query_var('paged')) {
-			$paged = get_query_var('paged');
-		} else if (get_query_var('page')) {
-			$paged = get_query_var('page');
-		}
-		
-		// current post, page id
-		$post_id = ($post) ? $post->ID : '-1';
-		if(is_home() && !is_front_page()){
-			$post_id = get_option('page_for_posts');
-		}
-		
-		// global layout
-		$global_layout = 'boxed-layout'; 
-		if(intval(penguin_get_options_key('global-layout')) != 0){
-			$global_layout = 'wide-layout';
-		}
-		
-		// current tax
-		$current_tax = get_query_var('taxonomy');
-	?>
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="<?php echo (penguin_get_options_key('favicon') != "") ? penguin_get_options_key('favicon') : get_template_directory_uri()."/img/favicon.png";?>" />
